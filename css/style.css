@@ -1,0 +1,981 @@
+/*======================================
+			Common CSS Start
+======================================*/
+*{
+	margin:0; padding: 0;
+}
+.container{
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 !important;
+}
+ul,ol{
+	list-style: none !important;
+}
+a{
+	text-decoration: none !important;
+}
+.flex{
+	display: flex;
+}
+.title{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.title h1{
+	color: #353535;
+	font-size: 24px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.1;
+	margin-top: 10px !important;
+}
+.title img{
+	margin: 7px 0 30px 0;
+}
+.btn{
+	padding: 0 !important;
+}
+/*======================================
+			Common CSS End
+======================================*/
+/*======================================
+				Nav Bar Start
+======================================*/
+nav{
+	margin-top: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+}
+nav .logo{
+ width: 25%;
+}
+nav .menu{
+	width: 66%;
+	margin-left: 10%;
+}
+nav .menu ul{
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+nav ul li a{
+	display: inline-block;
+	margin-left: 35px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	position: relative;
+}
+nav ul li a:hover{
+	color: #66468c;
+}
+nav ul li a:after{
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 1px;
+	height: 1px;
+	width: 0%;
+	background: #744fa0;
+	transition: .4s;
+}
+nav ul li a:hover:after{
+	width: 15px;
+}
+nav .btn{
+	margin-left: 30px;
+	display: flex;
+	align-items: center;
+	width: 14%;
+	justify-content: flex-end;
+}
+nav .btn a{
+	display: inline-block;
+	padding: 10px 20px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fdfdfe;
+	font-size: 14px;
+	font-weight: bold;
+	background: #744fa0;
+	border-radius: 3px;
+	transition: .4s;
+}
+nav .btn a:hover{
+	color: #000000;
+	background: #ffffff;
+}
+nav i{
+	color: #fff;
+	position: absolute;
+	top: 350%;
+	right: 30px;
+	cursor: pointer;
+	font-size: 20px !important;
+}
+/*======================================
+				Nav Bar End
+======================================*/
+/*======================================
+			Banner Section Start
+======================================*/
+.banner{
+	margin-bottom: 100px;
+	text-align: right;
+}
+.banner .plugin{
+	color: #ffffff;
+}
+.banner .img1{
+	background: url(../images/banner1.jpg) no-repeat center;
+	background-size: cover;
+}
+.banner .img2{
+	background: url(../images/banner2.jpg) no-repeat center;
+	background-size: cover;
+}
+.banner .img3{
+	background: url(../images/banner3.jpg) no-repeat center;
+	background-size: cover;
+}
+.banner .plugin .overlay{
+	width: 100%;
+	height: 100%;
+	background:rgb(0, 0, 0,0.7);
+	padding-top: 235px;
+	padding-bottom: 123px;
+}
+.banner .plugin .overlay a{
+	display: inline-block;
+	position: relative;
+	color: #fff;
+	background: #66468c;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 55px;
+	padding-right: 55px;
+	padding-right: 18px;
+	border-radius: 5px;
+	margin-left: 6px;
+	margin-top: 35px;
+	cursor: pointer;
+	transition: .4s;
+}
+.banner .plugin .overlay a span{
+	display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+}
+.banner .plugin .overlay a i{
+	position: absolute;
+	top: 13px;
+	left: 20px;
+	font-size: 33px;
+}
+.banner .plugin .overlay a:hover{
+	background-color: #fff;
+	color: black;
+}
+.banner .plugin .overlay h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 56px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+}
+.banner .plugin .overlay h1::first-letter{
+	color: #744fa0;
+}
+.banner .plugin .overlay h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	color: #fff;
+	position: relative;
+}
+.banner .plugin .overlay h3:after{
+	content: "";
+	position: absolute;
+	bottom: -72%;
+	right: 0;
+	width: 18%;
+	height: 1px;
+	background-color: #fff;
+}
+.banner .plugin .overlay p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	width: 470px;
+	margin-left: auto;
+	color: #fff;
+}
+.banner ul{
+	position: absolute;
+	right: 30px;
+	top: 46%;
+}
+.banner ul li button{
+	font-size: 0;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+	outline: none;
+}
+.banner ul li button:after{
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: #66468c;
+	border-radius: 50%;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+}
+.banner ul .slick-active button:after{
+	opacity: 1;
+}
+.banner ul .slick-active button{
+	border-color: #66468c;
+}
+.banner ul button{
+	margin-top: 20px;
+}
+/*======================================
+			Banner Section End
+======================================*/
+/*======================================
+			About Section Start
+======================================*/
+.about{
+	margin-bottom: 50px;
+}
+.about .title{
+	margin-bottom: 10px;
+}
+.about .title img{
+	margin: 0 0 20px 0 !important;
+}
+.about .left{
+	width: 60%;
+	text-align: center;
+}
+.about .right{
+	width: 40%;
+	text-align: right;
+}
+.about .left p{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #777;
+	line-height: 24px;
+	font-size: 14px;
+	width: 81%;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.about h1{
+	margin-top: 60px !important;
+}
+/*======================================
+			About Section End
+======================================*/
+/*======================================
+			Feature Section Start
+======================================*/
+.feature{
+	background: #f1f1f1;
+	padding: 56px 0 40px 0;
+}
+.feature .left{
+	position: relative;
+}
+.feature .left .item:hover i{
+	color: #744fa0;
+}
+.feature .left .item:hover h1{
+	color: #744fa0;
+}
+.feature .left .item:hover p{
+	color: #744fa0;
+}
+.feature .left i{
+	color: #353535;
+	font-size: 42px;
+	position: absolute;
+	left: -28%;
+	cursor: pointer;
+	transition: .4s;
+}
+.feature .left .item .one{
+	margin-top: -2px;
+}
+.feature .left .item .one1{
+	margin-left: -15px;
+}
+.feature .left .item .two{
+	margin-top: -2px;
+}
+.feature .left .item .three{
+	margin-top: -1px;
+}
+.feature .left .item .four{
+	margin-top: -2px;
+}
+.feature .left .item .five{
+	margin-top: -3px;	
+}
+.feature .left h1{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #353535;
+	line-height: 1.1;
+	cursor: pointer;
+	transition: .4s;
+}
+.feature .left p{
+	color: #777;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.42857143;
+	cursor: pointer;
+	width: 124%;
+}
+.feature .item{
+	margin-bottom: 30px;
+	margin-left: 55px;
+	position: relative;
+}
+.feature .left .item::after{
+	content: "";
+	height: 1px;
+	width: 260px;
+	position: absolute;
+	bottom: -27px;
+	left: -56px;
+	background-color: #353535;
+	transition: .4s;
+}
+.feature .left .item:hover::after{
+	width: 360px;
+	background-color: #744fa0;
+}
+.feature .middle{
+	width: 30%;
+	margin-left: 18%;
+}
+.feature .middle img{
+	display: block;
+	width: 100%;
+}
+.feature .right{
+	width: 41%;
+	margin-top: 60px;
+	margin-left: 79px;
+}
+.feature .right h1{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #353535;
+	text-align: right;
+}
+.feature .right p{
+	line-height: 24px;
+	color: #777;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: right;
+}
+.feature .right .pee{
+	padding-bottom: 17px;
+	padding-top: 17px;
+}
+
+.nav-pills .nav-link.active{
+	background-color: transparent !important;
+}
+.col-3{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.col-9{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.feature .active .left i{
+	color: #744fa0;
+}
+.feature .active .left h1{
+	color: #744fa0;
+}
+.feature .active .left p{
+	color: #744fa0;
+}
+.feature .active .left .item::after{
+	width: 360px;
+	background-color: #744fa0;
+}
+/*======================================
+			Feature Section End
+======================================*/
+/*======================================
+		Screenshot Section Start
+======================================*/
+.screenshot{
+	margin: 100px 0;
+}
+.screenshot .screenPlugin{
+	display: flex;
+}
+.screenshot .img{
+	margin: 0 15px;
+}
+.screenshot .slick-dots{
+	position: absolute;
+	display: flex;
+	bottom: -57px;
+	left: 507px;
+}
+.screenshot ul li button{
+	font-size: 0;
+	width: 18px;
+	height: 18px;
+	border: 3px solid #353535;
+	border-radius: 50%;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+	outline: none;
+}
+.screenshot ul li button:after{
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: #66468c;
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+}
+.screenshot ul .slick-active button:after{
+	opacity: 1;
+}
+.screenshot ul .slick-active button{
+	border-color: #66468c;
+}
+.screenshot ul li{
+	margin-left: 6px;
+}
+/*======================================
+		Screenshot Section End
+======================================*/
+/*======================================
+				Video Start
+======================================*/
+.watchVideo{
+	margin-bottom: 100px;	
+}
+.watchVideo .img{
+	background: url(../images/watchvideo.png) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.watchVideo .img .overlay{
+	background: rgb(0, 0, 0,0.7);
+	text-align: center;
+	padding: 200px 0;
+}
+.watchVideo .img .overlay i{
+	font-size: 80px;
+	color: #feffff;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.watchVideo .img .overlay i:hover{
+	color: #744fa0;
+}
+/*======================================
+				Video End
+======================================*/
+/*======================================
+			Price Section Start
+======================================*/
+.price{
+	margin-bottom: 100px;
+}
+.price .title{
+	margin-bottom: 10px;
+}
+.price .main{
+	justify-content: space-between;
+}
+.price .main .common{
+	border-radius: 15px;
+	border: 1px solid #f1f1f1;
+	text-align: center;
+	position: relative;
+	width: 23%;
+}
+.price .main .common h2{
+	background: #f1f1f1;
+	padding: 19px 0px;
+	border-radius: 15px 15px 0 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	color: #353535;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 100%;
+	transition: 0.4s;
+	margin-bottom: 0 !important;
+}
+.price .main .common .circle h1{
+	color: #353535;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 47px;
+	line-height: 13px;
+	margin-top: 26%;
+}
+.price .main .common .circle span{
+	font-size: 18px;
+}
+.price .main .common .circle h4{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #555;
+	font-size: 14px;
+}
+.price .main .common .circle{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	border: 3px solid #f1f1f1;
+	margin: 20px auto;
+}
+.price .main .common ul{
+	padding: 30px 0 40px;
+	background: #f1f1f1;
+	border-radius: 0 0 15px 15px;
+	margin-bottom: 0 !important;
+}
+.price .main .common ul li{
+	color: #555555;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding-bottom: 8px;
+	text-transform: initial;
+}
+.price .main .common a{
+	height: 36px;
+	width: 94px;
+	line-height: 34px;
+	border: 1px solid #353535;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #353535;
+	text-transform: capitalize;
+	position: absolute;
+	bottom: -16px;
+	left: 32%;
+	transition: 0.4s;
+}
+.price .main .common:hover a{
+	color: #fff;
+	background: #744fa0;
+	border-color: #744fa0;
+}
+.price .main .common:hover h2{
+	color: #fff;
+	background: #744fa0;
+	border-color: #744fa0;
+}
+/*======================================
+			Price Section End
+======================================*/
+/*======================================
+			Team Section Start
+======================================*/
+.team{
+	margin-bottom: 200px;
+}
+.team .title{
+	margin-bottom: 100px !important;
+}
+.team .main{
+	justify-content: space-between;
+}
+.team .main .common{
+	width: 31.5%;
+	text-align: center;
+	position: relative;
+	transition: 0.4s;
+	top: 0;
+}
+.team .main .common:hover{
+	top: -87px;
+}
+.team .main .common .img{
+	position: relative;
+}
+.team .main .common .img img{
+	width: 100%;
+	border-radius: 15px;
+}
+.team .main .common:hover .img img{
+	border-radius: 15px 15px 0 0;
+}
+.team .main .common .img .overlay{
+	background: rgba(0, 0, 0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.4s;
+	border-radius: 15px;
+}
+.team .main .common .img .overlay .main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.team .main .common .img .overlay .main .icon i{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: #f1f1f1;
+	text-align: center;
+	line-height: 50px;
+	color: #353535;
+	font-size: 24px;
+	margin: 0 3px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.team .main .common .img .overlay .main .icon i:hover{
+	background: #1da1f2;
+	color: #fff;
+	border-color: #1da1f2;
+}
+.team .main .common:hover .img .overlay{
+	opacity: 1;
+	border-radius: 15px 15px 0 0;
+}
+.team .main .common .text{
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.4s;
+}
+.team .main .common:hover .text{
+	opacity: 1;
+	top: 100%;
+	border-radius: 0 0 15px 15px;
+}
+.team .main .common .text h2{
+	color: #353535;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 0 !important;
+	margin-top: 30px;
+}
+.team .main .common .text span{
+	color: #999;
+	font-size: 15px;
+	font-family: 'Open sans', sans-serif;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.team .main .common .text p{
+	color: #777;
+	font-size: 14px;
+	font-family: 'Open sans', sans-serif;
+	font-weight: 400;
+	padding: 0 52px;
+	margin-bottom: 25px !important;
+	margin-top: 10px;
+}
+/*======================================
+			Team Section End
+======================================*/
+/*======================================
+			Feedback Start
+======================================*/
+.feedback{
+	margin-bottom: 100px;
+}
+.feedback .main{
+	background: url(../images/feedback_img.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.feedback .main .overlay{
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	padding: 30px 0 30px 0;
+}
+.feedback .main .overlay .plugin1{
+	width: 840px;
+	/* width: 62%; */
+	background: #f1f1f1;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 5px;
+	padding: 25px 70px 15px 70px;
+}
+.feedback .main .overlay .plugin1 .shape{
+	height: 25px;
+	width: 25px;
+	background: #f1f1f1;
+	transform: translate(-50%,50%) rotate(135deg);
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	border-radius: 4px;
+	z-index: 1;
+}
+.feedback .main .overlay .plugin1 .txt_plug{
+	text-align: center;
+}
+.feedback .main .overlay .plugin1 .txt_plug .item p{
+	color: #555555;
+	font-size: 14px;
+	font-family: 'Open sans', sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+}
+.feedback .main .overlay .plugin1 .txt_plug .item .pee{
+	margin-bottom: 0 !important;
+}
+.feedback .main .overlay .plugin1 .txt_plug .item h2{
+	color: #353535;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: capitalize;
+	margin-bottom: 0 !important;
+}
+.feedback .main .overlay .plugin1 .txt_plug .item .star i{
+	color: #744fa0;
+}
+.feedback .main .overlay .plugin2{
+	/* width: 40%; */
+	width: 540px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.feedback .main .overlay .plugin2 .img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 40px;
+	border: 2px solid transparent;
+	transform: scale(1);
+	transition: 0.4s;
+	position: relative;
+	overflow: hidden;
+}
+.feedback .main .overlay .plugin2 .img img{
+	width: 100%;
+	height: 100%;
+}
+.feedback .plugin2 .slick-center .borders{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background: transparent;
+	border: 2px solid red;
+}
+.feedback .main .overlay .plugin2 .img .overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255,.7);
+}
+.feedback .main .overlay .plugin2 .slick-center{
+	border: 2px solid #744fa0;
+	transform: scale(1.5);
+}
+.feedback .main .overlay .plugin2 .slick-center .overlay{
+	opacity: 0;
+}
+.feedback .main .overlay .plugin2 .slick-list{
+	padding: 25px 0 !important;
+}
+.feedback .main .overlay .plugin2 ul{
+	margin-top: 30px !important;
+	margin-bottom: 0 !important;
+	margin: 0 auto;
+	width: 104px;
+}
+.feedback .main .overlay .plugin2 ul li{
+	display: inline-block;
+	margin: 0 4px;
+}
+.feedback .main .overlay .plugin2 ul li button{
+	font-size: 0;
+	border: 3px solid #ffffff;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	background: transparent;
+	outline: none;
+	position: relative;
+}
+.feedback .main .overlay .plugin2 ul li button::after{
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #744fa0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	opacity: 0;
+}
+.feedback .main .overlay .plugin2 ul .slick-active button::after{
+	opacity: 1;
+}
+.feedback .main .overlay .plugin2 ul .slick-active button{
+	border-color: #744fa0;
+}
+/*======================================
+			Feedback End
+======================================*/
+/*======================================
+				Touch Start
+======================================*/
+.touch{
+	margin-bottom: 100px;
+	text-align: center;
+}
+.touch .main .common{
+	justify-content: space-between;
+}
+.touch .main .common input{
+	margin-bottom: 30px;
+	height: 50px;
+	color: #555555;
+	font-family: 'Open sans', sans-serif;
+	font-size: 14px;
+	border-radius: 8px;
+	width: 31.5%;
+	padding: 6px 12px;
+	border: 1px solid #353535;
+}
+.touch .main .two textarea{
+	padding: 10px;
+	width: 100%;
+	height: 200px;
+	color: #555555;
+	font-family: 'Open sans', sans-serif;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 1px solid #353535;
+	resize: none;
+}
+.touch .main .three{
+	margin-top: 25px;
+}
+.touch .main a{
+	display: inline-block;
+	border-radius: 3px;
+	background: #744fa0;
+	color: #fefefe;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	text-transform: capitalize;
+	border: 1px solid #744fa0;
+	padding: 2px 15px;
+	transition: 0.4s;
+}
+.touch .main a:hover{
+	background: #fff;
+	color: #744fa0;
+	border-color: #744fa0;
+}
+/*======================================
+				Touch End
+======================================*/
+/*======================================
+			Copyright Start
+======================================*/
+.copyright{
+	text-align: center;
+	background: #353535;
+	padding: 30px 0 20px 0;
+}
+.copyright .icon{
+	justify-content: center;
+	margin: 15px 0;
+}
+.copyright .icon i{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: #f1f1f1;
+	text-align: center;
+	line-height: 50px;
+	color: #353535;
+	font-size: 24px;
+	margin: 0 5px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.copyright .icon i:hover{
+	background: #1da1f2;
+	color: #fff;
+	border-color: #1da1f2;
+}
+.copyright .text p{
+	color: #f1f1f1;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+.copyright .text span{
+	color: #66468c;
+}
+/*======================================
+			Copyright End
+======================================*/
